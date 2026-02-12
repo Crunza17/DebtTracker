@@ -7,7 +7,18 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="FluentValidation" Version="11.9.0" />
+        <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.0" />
+        <PackageReference Include="MediatR" Version="12.2.0" />
+        <PackageReference Include="AutoMapper" Version="13.0.1" />
+    </ItemGroup>
+    
+    <ItemGroup>
       <ProjectReference Include="..\DebtTracker.Domain\DebtTracker.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Features\Payments\Queries\" />
     </ItemGroup>
 
 </Project>
